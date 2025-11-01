@@ -1,6 +1,6 @@
 # Multi-region MIG pull subscription
 
-This example creates Managed Instance Groups in multiple GCP regions, and makes them use the same PubSub pull subscription in orther to distribute tasks among themselves.
+This example creates Managed Instance Groups in multiple GCP regions, and makes them use the same PubSub pull subscription in order to distribute tasks among themselves.
 
 ## Design
 
