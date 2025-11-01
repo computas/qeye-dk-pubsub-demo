@@ -51,7 +51,7 @@ Time to build
 terraform apply -var auth_token=$(gcloud auth print-access-token) --var-file project_vars/common.tfvars
 ```
 
-Things might break because some APIs might not be enabled (I haven't tested on a newly created). Extend services.tf accordingly and re-run.
+Things might break because some APIs might not be enabled (I haven't tested on a newly created project). Extend services.tf accordingly and re-run.
 
 If apply keeps breaking, the best might be to destroy it and start from scratch
 
