@@ -122,8 +122,8 @@ terraform destroy -var auth_token=$(gcloud auth print-access-token) --var-file p
 
 - This is of course not a silver bullet of any kind, just a simple example of one way of multi-region scaling
 - We can go crazy with scaling metrics, it doesn't have to be the CPU utilization
-- I have no clue what happens, if there's not a single available spot instance in a region
-- Pubsub messages can be max 10MB, which sounds suitable for the DPI, but might be insufficient for other stuff
+- I have no clue what happens if there's not a single available spot instance in a region
+- Pubsub messages can be max 10MB which sounds suitable for the DPI, but might be insufficient for other stuff
 - Using regional templates would have been a more semantically correct approach then defining a global one for every region
 - It would be an obvious improvement to do this with container optimized os instead of copying code from a bucket
 - And again: this is just a POC
