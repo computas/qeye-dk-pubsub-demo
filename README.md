@@ -75,7 +75,7 @@ so we can see the logs of our worker. Do the same with the first vm of other ins
 
 ## Test
 
-From our own machine (so not the VMs) we c
+From our own machine (so not the VMs) we can publish messages to the topic
 
 ```bash
 terraform % for i in {1..500}; do \                                                                                
@@ -102,7 +102,7 @@ and if we look at the VM terminals, we should see them eating the messages:
 
 ![VM Output](docs/run_output.png)
 
-And after a few seconds, when restarting the Instance Groups page in the console we should see scaling happenning.
+And after a few seconds, when refreshing the Instance Groups page in the console we should see scaling happenning.
 
 ![Scaling](docs/console_mig.png)
 
